@@ -34,7 +34,12 @@
 								<button
 									onclick=\"location.href='?page=edit&id=".$row->id."';\" class='btn btn-primary'>Editar
 								</button>
-								<button class='btn btn-danger'>Excluir</button>
+								<button
+									onclick=\"if(confirm('Are you sure you want to delete this file?)){
+										location.href='?page=save&action=delete&id=".$row->id."'}else{false}
+										\"
+									class='btn btn-danger'>Excluir
+								</button>
 							</td>";
 
 				print "</tr>";
