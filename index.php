@@ -49,6 +49,10 @@
 								include('save-user.php');
 							break;
 
+							case 'edit':
+								include('edit-user.php');
+							break;
+
 							default:
 								print "<h1>Bem vindos</h1>";
 							break;
